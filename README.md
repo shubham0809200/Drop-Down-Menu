@@ -52,13 +52,14 @@ class _ExampleState extends State<Example> {
 
 ## Parameters
 
-| Parameter | Type                   | Description                                                |
-| --------- | ---------------------- | ---------------------------------------------------------- |
-| values    | List<String>           | List of items to be displayed in the drop-down menu.       |
-| value     | String                 | The currently selected item.                               |
-| onChanged | void Function(String?) | Callback function that is called when an item is selected. |
-| title     | String?                | The title of the drop-down menu.                           |
-| enabled   | bool?                  | If false, the drop-down menu will be disabled.              |
+| Parameter | Type                   | Description                                                                    |
+| --------- | ---------------------- | ------------------------------------------------------------------------------ |
+| values    | List<String>           | List of items to be displayed in the drop-down menu.                           |
+| value     | String                 | The currently selected item.                                                   |
+| onChanged | void Function(String?) | Callback function that is called when an item is selected.                     |
+| title     | String?                | The title of the drop-down menu.                                               |
+| enabled   | bool?                  | If false, the drop-down menu will be disabled.                                 |
+| themeFont | bool?                  | The font of the drop-down menu and title should be of project theme or default |
 
 ## Github Repository
 

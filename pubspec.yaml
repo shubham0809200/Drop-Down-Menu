@@ -1,6 +1,6 @@
 name: drop_down_list_menu
 description: A package for creating beautiful drop down menus.
-version: 0.0.3
+version: 0.0.5
 homepage: https://github.com/shubham0809200/Drop-Down-Menu
 
 environment:

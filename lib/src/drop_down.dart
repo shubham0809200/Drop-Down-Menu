@@ -6,6 +6,7 @@ class DropDownMenu extends StatelessWidget {
   final List<String> values;
   final String value;
   final bool? enabled;
+  final bool? themeFont;
   const DropDownMenu({
     Key? key,
     this.title,
@@ -13,6 +14,7 @@ class DropDownMenu extends StatelessWidget {
     required this.values,
     required this.value,
     this.enabled,
+    this.themeFont,
   }) : super(key: key);
 
   @override
@@ -27,7 +29,13 @@ class DropDownMenu extends StatelessWidget {
                 Expanded(
                   child: Text(
                     title!,
-                    style: Theme.of(context).textTheme.titleMedium,
+                    style: themeFont == true
+                        ? Theme.of(context).textTheme.titleMedium
+                        : const TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
                   ),
                 ),
               ],
@@ -48,13 +56,22 @@ class DropDownMenu extends StatelessWidget {
                   value: value,
                   child: Text(
                     value,
-                    style: TextStyle(
-                        fontSize: 14,
-                        color: enabled != null
-                            ? enabled == false
-                                ? Colors.grey
-                                : Colors.black
-                            : Colors.black),
+                    style: themeFont == true
+                        ? TextStyle(
+                            fontSize: 14,
+                            color: enabled != null
+                                ? enabled == false
+                                    ? Colors.grey
+                                    : Colors.black
+                                : Colors.black)
+                        : TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                            color: enabled != null
+                                ? enabled == false
+                                    ? Colors.grey
+                                    : Colors.black
+                                : Colors.black),
                   ),
                 );
               }).toList(),
