@@ -14,7 +14,7 @@ To use this package, add `drop_down_menu` as a [dependency in your pubspec.yaml 
 ## Example
 
 ```dart
-import 'package:drop_down_menu/drop_down_menu.dart';
+import 'package:drop_down_list_menu/drop_down.dart';
 
 class Example extends StatefulWidget {
   @override
@@ -34,14 +34,16 @@ class _ExampleState extends State<Example> {
       ),
       body: Center(
         child: DropDownMenu(
-          list: _list,
-          selectedItem: _selectedItem,
-          onItemSelected: (item) {
-            setState(() {
-              _selectedItem = item;
-            });
-          },
-        ),
+          title: 'Select an item',
+          enabled: false,
+          values: _list,
+            value: _selectedItem,
+              onChanged: (value) {
+              setState(() {
+                _selectedItem = value!;
+              });
+            },
+          ),
       ),
     );
   }
@@ -56,7 +58,7 @@ class _ExampleState extends State<Example> {
 | value     | String                 | The currently selected item.                               |
 | onChanged | void Function(String?) | Callback function that is called when an item is selected. |
 | title     | String?                | The title of the drop-down menu.                           |
-| disable   | bool?                  | If true, the drop-down menu will be disabled.              |
+| enabled   | bool?                  | If false, the drop-down menu will be disabled.              |
 
 ## Github Repository
 

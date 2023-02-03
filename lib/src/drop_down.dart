@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class DropDownAnswer extends StatelessWidget {
+class DropDownMenu extends StatelessWidget {
   final String? title;
   final void Function(String?) onChanged;
   final List<String> values;
   final String value;
-  final bool? disable;
-  const DropDownAnswer({
+  final bool? enabled;
+  const DropDownMenu({
     Key? key,
     this.title,
     required this.onChanged,
     required this.values,
     required this.value,
-    this.disable,
+    this.enabled,
   }) : super(key: key);
 
   @override
@@ -44,14 +44,14 @@ class DropDownAnswer extends StatelessWidget {
             child: DropdownButton<String>(
               items: values.map((String value) {
                 return DropdownMenuItem<String>(
-                  enabled: disable ?? true,
+                  enabled: enabled ?? true,
                   value: value,
                   child: Text(
                     value,
                     style: TextStyle(
                         fontSize: 14,
-                        color: disable != null
-                            ? disable == false
+                        color: enabled != null
+                            ? enabled == false
                                 ? Colors.grey
                                 : Colors.black
                             : Colors.black),
