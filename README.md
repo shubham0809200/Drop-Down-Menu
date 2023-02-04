@@ -4,9 +4,6 @@ The "Drop-Down Menu" package is a Flutter package that provides a user-friendly 
 
 ## Screenshots
 
-<!-- use image in asset folder  -->
-<!-- show two image side by side -->
-
 <img src="assets/screenshot2.png" width="300" height="600" /> <img src="assets/screenshot3.png" width="300" height="600" />
 
 ## Usage
