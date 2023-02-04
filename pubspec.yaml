@@ -1,6 +1,6 @@
 name: drop_down_list_menu
-description: A package for creating beautiful drop down menus.
-version: 0.0.5
+description: The "Drop-Down Menu" package is a Flutter package that provides a user-friendly interface for selecting options from a drop-down menu. This package is designed to be aesthetically pleasing and highly customizable, allowing developers to create a drop-down menu that perfectly fits the look and feel of their app. Whether you need to allow users to select from a list of items, navigate to different pages, or take some other action, this package has got you covered. So, if you want to provide your users with a beautiful and functional drop-down menu, this package is the perfect solution!
+version: 0.0.6
 homepage: https://github.com/shubham0809200/Drop-Down-Menu
 
 environment:
@@ -16,10 +16,6 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^2.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
 flutter:
   # To add assets to your package, add an assets section, like this:
   assets:
