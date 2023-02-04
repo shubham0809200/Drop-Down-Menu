@@ -1,6 +1,6 @@
 # Drop-Down-Menu [![pub package](https://img.shields.io/pub/v/drop_down_list_menu.svg)](https://pub.dev/packages/drop_down_list_menu)
 
-The "Drop-Down Menu" package is a Flutter package that provides a user-friendly interface for selecting options from a drop-down menu. This package is designed to be aesthetically pleasing and highly customizable, allowing developers to create a drop-down menu that perfectly fits the look and feel of their app. Whether you need to allow users to select from a list of items, navigate to different pages, or take some other action, this package has got you covered. So, if you want to provide your users with a beautiful and functional drop-down menu, this package is the perfect solution!
+The "Drop-Down Menu" package is a Flutter package that provides a user-friendly interface for selecting options from a drop-down menu. This package is designed to be aesthetically pleasing and highly customizable, allowing developers to create a drop-down menu that perfectly fits the look and feel of their app. So, if you want to provide your users with a beautiful and functional drop-down menu, this package is the perfect solution!
 
 ## Screenshots
 
