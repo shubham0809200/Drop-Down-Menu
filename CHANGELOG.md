@@ -13,3 +13,7 @@
 ## 0.0.6
 
 * Added an example to the README.md file.
+
+## 0.0.9 
+
+* optimised the code

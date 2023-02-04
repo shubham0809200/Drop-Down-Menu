@@ -1,4 +1,4 @@
-import 'package:drop_down_list_menu/drop_down.dart';
+import 'package:drop_down_list_menu/drop_down_list_menu.dart';
 import 'package:flutter/material.dart';
 
 void main() {
